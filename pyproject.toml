@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "llm-project"
+version = "0.2.0"
+packages = [{include = "llm_project", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"   
+
+[tool.poetry.group.dev.dependencies]

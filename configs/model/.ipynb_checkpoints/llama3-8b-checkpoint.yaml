@@ -1,0 +1,3 @@
+name: meta-llama/Llama-3-8B
+dtype: bfloat16
+peft_method: qlora

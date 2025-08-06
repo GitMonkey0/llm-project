@@ -1,0 +1,5 @@
+defaults:
+  - model: llama3-8b
+  - data: alpaca
+  - train: sft
+experiment_name: sft_llama3_qlora

@@ -1,0 +1,11 @@
+defaults:
+  - model: qwen3-8b
+  - data: gongyi
+  - train: sft
+  - _self_
+
+hydra:
+  job:
+    chdir: false         
+  run:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S}

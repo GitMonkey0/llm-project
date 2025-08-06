@@ -1,0 +1,19 @@
+_target_: llm_project.training.strategy.sft.SFTTrainer
+
+learning_rate: 1e-5
+num_train_epochs: 1
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+gradient_checkpointing: true
+max_length: 2048
+eos_token: <|im_end|>
+logging_steps: 1
+eval_strategy: 'no'
+eval_steps: 100
+deepspeed: configs/train/ds_z3_config.json
+output_dir: outputs/
+bf16: true
+# assistant_only_loss: true
+completion_only_loss: true
+save_only_model: false
+packing: false
