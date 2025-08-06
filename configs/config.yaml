@@ -1,6 +1,6 @@
 defaults:
-  - model: qwen3-8b
-  - data: gongyi
+  - model: qwen3-06b
+  - data: chat
   - train: sft
   - _self_
 

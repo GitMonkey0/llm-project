@@ -13,7 +13,7 @@ eval_steps: 100
 deepspeed: configs/train/ds_z3_config.json
 output_dir: outputs/
 bf16: true
-# assistant_only_loss: true
-completion_only_loss: true
+assistant_only_loss: true
+#completion_only_loss: true
 save_only_model: false
 packing: false

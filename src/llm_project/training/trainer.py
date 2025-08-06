@@ -11,5 +11,5 @@ class Trainer:
         self.cfg = cfg
 
     def train(self, model, dataset):
-        trainer = instantiate(self.cfg.train, model=model, train_dataset=dataset["train"], eval_dataset=dataset["validation"])
+        trainer = instantiate(self.cfg.train, model=model, train_dataset=dataset["train"], eval_dataset=dataset.get("validation"))
         trainer.train()
